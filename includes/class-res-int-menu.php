@@ -69,6 +69,12 @@ class Res_Int_Menu
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-res-int-menu-i18n.php';
 
+		/**
+		 * The class responsible for saving all the settings defined,
+		 * of the plugin.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-res-int-menu-save-settings.php';
+
 	}
 
 	/**
@@ -83,6 +89,10 @@ class Res_Int_Menu
 		add_action( 'admin_menu', array ( $this, 'add_menu' ) );
 
 		add_action( 'admin_enqueue_scripts', array ( $this, 'admin_enqueue_style_scripts' ) );
+
+		$save_all_settings = new Res_Int_Menu_Save_Settings();
+
+		add_action( 'admin_post_res_int_menu_settings_save', array( $save_all_settings, 'save_settings' ) );
 
 
 	}
