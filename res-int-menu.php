@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The plugin bootstrap file
+ * The plugin main file
  *
  * This file is read by WordPress to generate the plugin information in the plugin
  * admin area. This file also includes all of the dependencies used by the plugin,
@@ -29,6 +29,11 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
+
+//Define
+
+define( 'RES_INT_BASE_PATH', dirname( __FILE__ ) );
+define( 'RES_INT_FILE_PATH', __FILE__ );
 
 /**
  * The code that runs during plugin activation.

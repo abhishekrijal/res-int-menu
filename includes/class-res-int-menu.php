@@ -33,7 +33,7 @@ class Res_Int_Menu
         'Responsive Menu',
         'manage_options',
         'responsive-menu',
-        array( $this, 'add_menu_callback' ),
+        array( $this, 'menu_page_callback' ),
         'dashicons-marker',
         6
     );
@@ -41,9 +41,10 @@ class Res_Int_Menu
 
 	}
 
-	public function add_menu_callback() {
+	public function menu_page_callback() {
 
-
+		//Menu Page Settings.
+		require RES_INT_BASE_PATH .'/includes/class-res-int-menu-settings.php';
 		
 	}
 }
