@@ -35,8 +35,8 @@ if ( ! defined( 'WPINC' ) ) {
  * This action is documented in includes/class-res-int-menu-activator.php
  */
 function activate_res_int_menu() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-res-int-menu-activator.php';
-	Res_Int_Menu_Activator::activate();
+	
+
 }
 
 /**
@@ -44,8 +44,8 @@ function activate_res_int_menu() {
  * This action is documented in includes/class-res-int-menu-deactivator.php
  */
 function deactivate_res_int_menu() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-res-int-menu-deactivator.php';
-	Res_Int_Menu_Deactivator::deactivate();
+	
+
 }
 
 register_activation_hook( __FILE__, 'activate_res_int_menu' );
@@ -69,7 +69,6 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-res-int-menu.php';
 function run_res_int_menu() {
 
 	$plugin = new Res_Int_Menu();
-	$plugin->run();
 
 }
 run_res_int_menu();
