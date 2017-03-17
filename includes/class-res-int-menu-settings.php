@@ -84,8 +84,6 @@
 		<!-- .tab_container -->
 		</div>
 	</div>
-		
-	
 		<div id="secondary" class="secondary-main-contain">
 			<div class="secondary-main-contain-block">
 				<div class="secondary-heading">

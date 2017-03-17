@@ -34,6 +34,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 define( 'RES_INT_BASE_PATH', dirname( __FILE__ ) );
 define( 'RES_INT_FILE_PATH', __FILE__ );
+define( 'RES_INT_FILE_URL', plugins_url( '', __FILE__ ) );
 
 /**
  * The code that runs during plugin activation.
